@@ -1,108 +1,90 @@
-<style>
-  div.resultado{
-    border: 1px solid black;
-  }
-  button {
-    background: rgba(226, 226, 226, 1);
-    background: -moz-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 31%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(31%, rgba(219, 219, 219, 1)), color-stop(51%, rgba(209, 209, 209, 1)), color-stop(100%, rgba(254, 254, 254, 1)));
-    background: -webkit-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 31%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-    background: -o-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 31%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 31%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-    background: linear-gradient(to bottom, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 31%, rgba(209, 209, 209, 1) 51%, rgba(254, 254, 254, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#fefefe', GradientType=0);
-  }
-
-  button:focus{
-    outline: 0;
-  }
-</style>
 <div class="container">
   <div class="row">
-    <div class="col">
-      <img src="https://www.txstate.edu/cache2e29a7bb0775fe94651b1b6662d56e3e/imagehandler/scaler/gato-docs.its.txstate.edu/jcr:95cf076e-2e79-474d-a8a8-c13ef8c62ed3/math_banner.jpg?mode=fit&width=2000" height="200" width="100%">
+    <div class="col-12 col-md-12 order-2 order-md-1 p-3">
+      <img
+        src="https://www.txstate.edu/cache2e29a7bb0775fe94651b1b6662d56e3e/imagehandler/scaler/gato-docs.its.txstate.edu/jcr:95cf076e-2e79-474d-a8a8-c13ef8c62ed3/math_banner.jpg?mode=fit&width=2000"
+        height="200"
+        width="100%"
+      />
     </div>
-  </div>
-</div>
-<br><br>
-<div class="container">
-  <div class="row botones">
-    <div class="col-md-5 col-sm-12">
+    <div class="col-12 col-md-12 order-1 order-md-2">
       <div class="row">
-        <button class="col-md-4 col-sm-4 col-4">
-          7
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          8
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          9
-        </button>
-      </div>
-      <div class="row">
-        <button class="col-md-4 col-sm-4 col-4">
-          4
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          5
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          6
-        </button>
-      </div>
-      <div class="row">
-        <button class="col-md-4 col-sm-4 col-4">
-          1
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          2
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          3
-        </button>
-      </div>
-      <div class="row">
-        <button class="col-md-4 col-sm-4 col-4">
-          .
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          0
-        </button>
-        <button class="col-md-4 col-sm-4 col-4">
-          =
-        </button>
-      </div>
-    </div>
-    <div class="col"></div>
-    <div class="col-md-5 col-sm-12">
-      <div class="row">
-        <div class="col text-center resultado">
-          RESULTADO
+        <div class="col-md-5 col-sm-12 p-3">
+          <div class="row">
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              7
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              8
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              9
+            </button>
+          </div>
+          <div class="row">
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              4
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              5
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              6
+            </button>
+          </div>
+          <div class="row">
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              1
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              2
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              3
+            </button>
+          </div>
+          <div class="row">
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              .
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+              0
+            </button>
+            <button class="col-md-4 col-sm-4 col-4" (click)="result()">
+              =
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="row">
-        <button class="col-md-6">
-          +
-        </button>
-        <button class="col-md-6">
-          -
-        </button>
-      </div>
-      <div class="row">
-        <button class="col-md-6">
-          *
-        </button>
-        <button class="col-md-6">
-          /
-        </button>
-      </div>
-      <div class="row">
-        <button class="col-md-6">
-          %
-        </button>
-        <button class="col-md-6">
-          ^
-        </button>
+        <div class="col"></div>
+        <div class="col-md-5 col-sm-12 p-3">
+          <div class="row">
+            <div class="col text-center resultado" [innerHTML]="htmlStr" style="height: 30px;" ></div>
+          </div>
+          <div class="row">
+            <button class="col-md-6" (click)="getValue($event)">
+              +
+            </button>
+            <button class="col-md-6" (click)="getValue($event)">
+              -
+            </button>
+          </div>
+          <div class="row">
+            <button class="col-md-6" (click)="getValue($event)">
+              *
+            </button>
+            <button class="col-md-6" (click)="getValue($event)">
+              /
+            </button>
+          </div>
+          <div class="row">
+            <button class="col-md-6" (click)="getValue($event)">
+              %
+            </button>
+            <button class="col-md-6" (click)="getValue($event)">
+              ^
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
