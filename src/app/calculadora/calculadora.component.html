@@ -1,0 +1,92 @@
+<div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 order-2 order-md-1 p-3">
+            <img
+              src="https://www.txstate.edu/cache2e29a7bb0775fe94651b1b6662d56e3e/imagehandler/scaler/gato-docs.its.txstate.edu/jcr:95cf076e-2e79-474d-a8a8-c13ef8c62ed3/math_banner.jpg?mode=fit&width=2000"
+              height="200"
+              width="100%"
+            />
+          </div>
+          <div class="col-12 col-md-12 order-1 order-md-2">
+            <div class="row">
+              <div class="col-md-5 col-sm-12 p-3">
+                <div class="row">
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    7
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    8
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    9
+                  </button>
+                </div>
+                <div class="row">
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    4
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    5
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    6
+                  </button>
+                </div>
+                <div class="row">
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    1
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    2
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    3
+                  </button>
+                </div>
+                <div class="row">
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    .
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="getValue($event)">
+                    0
+                  </button>
+                  <button class=" btn-calc col-md-4 col-sm-4 col-4" (click)="result()">
+                    =
+                  </button>
+                </div>
+              </div>
+              <div class="col"></div>
+              <div class="col-md-5 col-sm-12 p-3">
+                <div class="row">
+                  <div class="col text-center resultado" [innerHTML]="htmlStr" style="height: 30px;" ></div>
+                </div>
+                <div class="row">
+                  <button class=" btn-calc col-md-6" (click)="getValue($event)">
+                    +
+                  </button>
+                  <button class=" btn-calc col-md-6" (click)="getValue($event)">
+                    -
+                  </button>
+                </div>
+                <div class="row">
+                  <button class=" btn-calc col-md-6" (click)="getValue($event)">
+                    *
+                  </button>
+                  <button class=" btn-calc col-md-6" (click)="getValue($event)">
+                    /
+                  </button>
+                </div>
+                <div class="row">
+                  <button class=" btn-calc col-md-6" (click)="getValue($event)">
+                    %
+                  </button>
+                  <button class=" btn-calc col-md-6" (click)="getValue($event)">
+                    ^
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
